@@ -1,0 +1,153 @@
+<html lang="en">
+<head>
+    <title>Twister</title>
+    <style>
+        *{
+            margin:0;
+            padding: 0;
+        }
+        body{
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        .container{
+            height: 500px;
+            width:500px;
+            background-color: lightgray;
+            border-radius: 10px;
+        }
+
+        .padd{
+            padding: 30px;
+        }
+
+        .score{
+            width:100%;
+            display: flex;
+            justify-content: flex-end;
+            font-size: 50px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+
+        }
+
+        .jumbled{
+            width:100%;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            display: flex;
+            justify-content: center;
+            font-size: 40px;
+            text-transform: uppercase;
+            font-family: segoe UI;
+            
+        }
+
+        .user-input{
+            padding-top: 20px;
+            padding-bottom: 20px;
+            display: flex;
+            flex-direction: column;
+
+        }
+
+        .inp{
+            height: 40px;
+            font-size: 18px;
+            border:1px solid gray;
+            border-radius: 10px;
+            text-indent: 20px;
+            outline: none;
+            
+            
+        }
+
+        .btn{
+            padding-top: 15px;
+            padding-bottom: 15px;
+            margin-top: 20px;
+            border-radius: 10px;
+            border:none;
+            cursor: pointer;
+            background-color: #239cf3;
+            color: white;
+            font-size: 20px;
+            text-transform: uppercase;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+
+        <div class="padd">
+            <div class="score">
+                <p id="score">0</p>
+            </div>
+
+            <div class="jumbled">
+                <p id="j-word"></p>
+            </div>
+
+            <div class="user-input">
+                <input type="text" class="inp" id="inp" placeholder="Correct Word"/>
+                 <button class="btn" onclick="checkAnswer()">Submit</button>
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <script src="jumble.js"></script>
+
+</body>
+</html>
+
+
+<html lang="en">
+<head>
+    <title>DOM Manipulation</title>
+    <style>
+        #one{
+            height: 100px;
+            width: 100px;
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- <h1 class="name">Letsupgrade</h1> -->
+
+    <!-- <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. A deleniti quibusdam, omnis non consequatur neque minus eum veritatis reprehenderit magni labore possimus facere itaque adipisci porro impedit ducimus nulla eius?
+    </p> -->
+
+    <div id="one">
+
+    </div>
+
+    <button onclick="changeStyle()">Change Style</button>
+
+    <div id="para2">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. A deleniti quibusdam, omnis non consequatur neque minus eum veritatis reprehenderit magni labore possimus facere itaque adipisci porro impedit ducimus nulla eius?
+    </div>
+
+    <img id="image" src="https://upload.wikimedia.org/wikipedia/en/thumb/3/3c/Chris_Hemsworth_as_Thor.jpg/220px-Chris_Hemsworth_as_Thor.jpg" width="300px"/>
+
+    <button onclick="changeImage()">Change Image</button>
+
+    <input type="text" placeholder="name" id="inp"/>
+
+    <button onclick="getValue()">Get Name</button>
+
+
+    
+    <script src="second.js"></script>
+</body>
+</html>
