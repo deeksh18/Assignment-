@@ -1,0 +1,29 @@
+
+
+{
+ "food":[
+    {
+      "Name":"Apple",
+      "Type":"fruit",
+      "Price":100
+    },
+    {
+      "Name":"pizza",
+      "Type":"italian",
+      "Price":370
+    },
+    {
+      "Name":"Burger",
+      "Type":"Mac&Cheese",
+      "Price":310
+    },
+    {
+      "Name":"salad",
+      "Type":"Veg",
+      "Price":50
+    }
+  ]
+}
+var json = require('./data.json');
+
+json.food.forEach(function(object) { console.log(object.Name); });
